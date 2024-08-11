@@ -2,10 +2,6 @@ import numpy as np
 import streamlit as st
 import pickle
 
-print(np.__version__)
-print(st.__version__)
-print(pickle.__version__)
-
 books = pickle.load(open('PKL/books.pkl', 'rb'))
 pt = pickle.load(open('PKL/pt.pkl', 'rb'))
 similarity_scores = pickle.load(open('PKL/similarity_scores.pkl', 'rb'))
